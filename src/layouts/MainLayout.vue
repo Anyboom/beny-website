@@ -1,4 +1,3 @@
 <template>
-  <p>MainLayout</p>
-  <RouterView />
+  <slot></slot>
 </template>

@@ -1,5 +1,8 @@
 import type { RouteLocationNormalized } from "vue-router";
-import { AppLayoutsEnum, AppLayoutToFileMap } from "@/layouts/layouts.types";
+import {
+  AppLayoutsEnum,
+  AppLayoutToFileMap,
+} from "@/layouts/types/layouts.types";
 
 export async function loadLayoutMiddleware(
   route: RouteLocationNormalized,

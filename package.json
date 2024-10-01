@@ -16,9 +16,11 @@
   "dependencies": {
     "@primevue/themes": "^4.0.7",
     "pinia": "^2.1.7",
+    "primeicons": "^7.0.0",
     "primevue": "^4.0.7",
+    "tailwindcss-primeui": "^0.3.4",
     "vite-plugin-eslint": "^1.8.1",
-    "vue": "^3.4.29",
+    "vue": "^3.5.8",
     "vue-router": "^4.3.3"
   },
   "devDependencies": {

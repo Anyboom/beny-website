@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import { loadLayoutMiddleware } from "@/router/middleware/loadLayout.middleware";
-import { AppLayoutsEnum } from "@/layouts/layouts.types";
+import { AppLayoutsEnum } from "@/layouts/types/layouts.types";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -14,9 +14,28 @@ const router = createRouter({
       },
     },
     {
+      path: "/signin",
+      component: () => import("../views/auth/SignInView.vue"),
+      name: "auth-signin",
+      meta: {
+        layout: AppLayoutsEnum.auth,
+      },
+    },
+    {
+      path: "/signup",
+      component: () => import("../views/auth/SignUpView.vue"),
+      name: "auth-signup",
+      meta: {
+        layout: AppLayoutsEnum.auth,
+      },
+    },
+    {
       path: "/",
       component: () => import("../views/main/HomeView.vue"),
       name: "app-index",
+      meta: {
+        layout: AppLayoutsEnum.main,
+      },
     },
   ],
 });
